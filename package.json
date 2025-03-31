@@ -1,0 +1,26 @@
+{
+  "name": "mcp-add-test",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "files": ["build"],
+  "scripts": {
+    "test": "jest",
+    "build": "tsc && chmod 755 build/index.js"
+  },
+  "bin": {
+    "mcp-add-test": "./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.8.0",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.14",
+    "typescript": "^5.8.2"
+  }
+}
